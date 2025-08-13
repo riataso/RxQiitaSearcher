@@ -30,6 +30,10 @@ Temporary Items
 build/
 DerivedData/
 
+# Xcode user-specific files
+*.xcuserstate
+xcuserdata/
+
 ## User-specific
 *.xcodeproj/project.xcworkspace/xcshareddata/xcschemes/
 *.xcodeproj/xcuserdata/
