@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		48DF0E7E2E4CBC510057DF0F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 48DF0E7D2E4CBC510057DF0F /* RxCocoa */; };
+		48DF0E802E4CBC510057DF0F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 48DF0E7F2E4CBC510057DF0F /* RxRelay */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		48DF0E5F2E4C163A0057DF0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48DF0E802E4CBC510057DF0F /* RxRelay in Frameworks */,
+				48DF0E7E2E4CBC510057DF0F /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,12 +126,15 @@
 			buildRules = (
 			);
 			dependencies = (
+				48DF0E832E4CC8A90057DF0F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				48DF0E4A2E4C16370057DF0F /* QiitaFeediOS */,
 			);
 			name = QiitaFeediOS;
 			packageProductDependencies = (
+				48DF0E7D2E4CBC510057DF0F /* RxCocoa */,
+				48DF0E7F2E4CBC510057DF0F /* RxRelay */,
 			);
 			productName = QiitaFeediOS;
 			productReference = 48DF0E482E4C16370057DF0F /* QiitaFeediOS.app */;
@@ -208,6 +218,10 @@
 			);
 			mainGroup = 48DF0E3F2E4C16370057DF0F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				48DF0E7C2E4CBC510057DF0F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				48DF0E812E4CBD630057DF0F /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 48DF0E492E4C16370057DF0F /* Products */;
 			projectDirPath = "";
@@ -278,6 +292,10 @@
 			isa = PBXTargetDependency;
 			target = 48DF0E472E4C16370057DF0F /* QiitaFeediOS */;
 			targetProxy = 48DF0E692E4C163A0057DF0F /* PBXContainerItemProxy */;
+		};
+		48DF0E832E4CC8A90057DF0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 48DF0E822E4CC8A90057DF0F /* SwiftLintBuildToolPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -581,6 +599,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48DF0E7C2E4CBC510057DF0F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		48DF0E812E4CBD630057DF0F /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.59.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48DF0E7D2E4CBC510057DF0F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48DF0E7C2E4CBC510057DF0F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		48DF0E7F2E4CBC510057DF0F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48DF0E7C2E4CBC510057DF0F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		48DF0E822E4CC8A90057DF0F /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48DF0E812E4CBD630057DF0F /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48DF0E402E4C16370057DF0F /* Project object */;
 }
