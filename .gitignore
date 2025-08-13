@@ -1,0 +1,65 @@
+# Created by https://www.toptal.com/developers/gitignore/api/swift 
+# Edit at https://www.toptal.com/developers/gitignore?templates=swift,xcode 
+
+### General ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple .timemachine. habitantes
+
+# Directories potentially created on remote AFP shares
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Xcode ###
+## Build generated
+build/
+DerivedData/
+
+## User-specific
+*.xcodeproj/project.xcworkspace/xcshareddata/xcschemes/
+*.xcodeproj/xcuserdata/
+
+## Swift Package Manager
+#
+# Xcode generates its own consistent Package.resolved file
+# which is stored in your project's workspace data.
+# It's recommended to only check in your Package.swift file.
+#
+# More information:
+# https://developer.apple.com/documentation/xcode/creating_a_standalone_swift_package_with_xcode#3573809 
+
+.build/
+.swiftpm/
+
+# Carthage
+Carthage/Build
+Carthage/Checkouts
+
+# CocoaPods
+Pods/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# SwiftLint
+.swiftlint.yml
+
+### END ###
