@@ -68,6 +68,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		48DF0ECB2E4CEBA30057DF0F /* Repositories */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		48DF0ECE2E4D0A4D0057DF0F /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,8 @@
 		48DF0E3F2E4C16370057DF0F = {
 			isa = PBXGroup;
 			children = (
+				48DF0ECE2E4D0A4D0057DF0F /* ViewModels */,
+				48DF0ECB2E4CEBA30057DF0F /* Repositories */,
 				48DF0EB02E4CD75A0057DF0F /* Models */,
 				48DF0E4A2E4C16370057DF0F /* QiitaFeediOS */,
 				48DF0E612E4C163A0057DF0F /* QiitaFeediOSTests */,
@@ -137,6 +149,8 @@
 			fileSystemSynchronizedGroups = (
 				48DF0E4A2E4C16370057DF0F /* QiitaFeediOS */,
 				48DF0EB02E4CD75A0057DF0F /* Models */,
+				48DF0ECB2E4CEBA30057DF0F /* Repositories */,
+				48DF0ECE2E4D0A4D0057DF0F /* ViewModels */,
 			);
 			name = QiitaFeediOS;
 			packageProductDependencies = (
