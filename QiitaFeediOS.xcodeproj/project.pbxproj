@@ -78,6 +78,11 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		48F55AF52E4DF82F00EC4BEC /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,7 @@
 		48DF0E3F2E4C16370057DF0F = {
 			isa = PBXGroup;
 			children = (
+				48F55AF52E4DF82F00EC4BEC /* View */,
 				48DF0ECE2E4D0A4D0057DF0F /* ViewModels */,
 				48DF0ECB2E4CEBA30057DF0F /* Repositories */,
 				48DF0EB02E4CD75A0057DF0F /* Models */,
@@ -151,6 +157,7 @@
 				48DF0EB02E4CD75A0057DF0F /* Models */,
 				48DF0ECB2E4CEBA30057DF0F /* Repositories */,
 				48DF0ECE2E4D0A4D0057DF0F /* ViewModels */,
+				48F55AF52E4DF82F00EC4BEC /* View */,
 			);
 			name = QiitaFeediOS;
 			packageProductDependencies = (

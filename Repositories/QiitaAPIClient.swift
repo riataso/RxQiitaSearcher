@@ -8,7 +8,6 @@ enum APIError: Error, LocalizedError {
     case networkError(Error)
     case decodingError(Error)
 
-
     var errorDescription: String? {
         switch self {
         case .invalidURL:
@@ -31,7 +30,7 @@ class QiitaAPIClient: QiitaAPIClientProtocol {
             return .just([]) // クエリが空なら空配列を返す
         }
 
-        guard var urlComponents = URLComponents(string: "https://qiita.com/api/v2/items ") else {
+        guard var urlComponents = URLComponents(string: "https://qiita.com/api/v2/items") else {
             return .error(APIError.invalidURL)
         }
         urlComponents.queryItems = [
